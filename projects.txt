@@ -1,0 +1,757 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int number1, number2, temp;
+            console.Write("\nInput the First Number : ");
+            number1 = int.Parse(Console.ReadLine());
+            Console.Write("\nInput the Second Number : ");
+            number2 = int.Parse(Console.ReadLine());
+            temp = number1;
+            number1 = number2;
+            number2 = temp;
+            console.Write("\nAfter Swapping : ");
+            Console.Write("\nFirst Number : " + number1);
+            console.Write("\nSecond Number : " + number2);
+            Console.Read();
+
+        }
+    }
+}   
+===========================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace practise3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter another number: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("{0} + {1} = {2}", num1, num2, num1 + num2);
+            Console.WriteLine("{0} - {1} = {2}", num1, num2, num1 - num2);
+            Console.WriteLine("{0} x {1} = {2}", num1, num2, num1 * num2);
+            Console.WriteLine("{0} / {1} = {2}", num1, num2, num1 / num2);
+            Console.WriteLine("{0} mod {1} = {2}", num1, num2, num1 % num2);
+        }
+    }
+}
+======================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, num3;
+
+            Console.Write("Input the first number to multiply: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input the second number to multiply: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input the third number to multiply: ");
+            num3 = Convert.ToInt32(Console.ReadLine());
+
+            int result = num1 * num2 * num3;
+            Console.WriteLine("Output: {0} x {1} x {2} = {3}",
+                                num1, num2, num3, result);
+        }
+    }
+}
+=================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double number1, number2, number3, number4;
+
+            Console.Write("Enter the First number: ");
+            number1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the Second number: ");
+            number2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the third number: ");
+            number3 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the fourth number: ");
+            number4 = Convert.ToDouble(Console.ReadLine());
+
+            double result = (number1 + number2 + number3 + number4) / 4;
+            Console.WriteLine("The average of {0}, {1}, {2}, {3} is: {4} ",
+         number1, number2, number3, number4, result);
+        }
+    }
+}
+=======================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double m1 = 200;
+            Console.WriteLine("Meter   ::    Kilometer");
+            double k1 = ConvertDistance.cMtK(m1);
+            Console.WriteLine("{0}     ::    {1}", m1, k1);
+            double m4 = 3107;
+            double k4 = ConvertDistance.cMtK(m4);
+            Console.WriteLine("{0}   ::     {1}", m4, k4);
+            double k3 = 5.1;
+            Console.WriteLine();
+            Console.WriteLine("Kilometer     ::     Meter");
+            double m3 = ConvertDistance.cKtM(k3);
+            Console.WriteLine("{0}           ::     {1}", k3, m3);
+            double k2 = 3.219;
+            double m2 = ConvertDistance.cKtM(k2);
+            Console.WriteLine("{0}         ::    {1}", k2, m2);
+            Console.Read();
+        }
+    }
+
+    public static class ConvertDistance
+    {
+        public static double cMtK(double meters)
+        {
+            return meters / 1000;
+        }
+
+        public static double cKtM(double kilometers)
+        {
+            return kilometers * 1000;
+        }
+    }
+}
+    
+
+=========================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double usd = 0;
+            double inr = 0;
+            double value = 0;
+
+            Console.Write("Enter amount in USD: ");
+            usd = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter the USD value :");
+            value = double.Parse(Console.ReadLine());
+
+            inr = usd * value;
+            Console.WriteLine("USD " + usd + "-> INR " + inr);
+        }
+    }
+}
+=============================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 5, b = 10;
+            Console.WriteLine("Before swap a= " + a + " b= " + b);
+            a = a * b; //a=50 (5*10)      
+            b = a / b; //b=5 (50/10)      
+            a = a / b; //a=10 (50/5)    
+            Console.Write("After swap a= " + a + " b= " + b);
+            Console.Read();
+            
+        }
+    }
+}
+======================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double number1, number2, number3, number4;
+
+            Console.Write("Enter the First number: ");
+            number1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the Second number: ");
+            number2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the third number: ");
+            number3 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the fourth number: ");
+            number4 = Convert.ToDouble(Console.ReadLine());
+
+            double result = (number1 + number2 + number3 + number4) / 4;
+            Console.WriteLine("The average of {0}, {1}, {2}, {3} is: {4} ",
+         number1, number2, number3, number4, result);
+            Console.Read();
+        }
+    }
+}
+===================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int number1, number2, number3;
+
+            Console.Write("Enter first number - ");
+            number1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter second number - ");
+            number2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter third number - ");
+            number3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Result of specified numbers {0}, {1} and {2}, (x+y)·z is {3} and x·y + y·z is {4}\n\n",
+                number1, number2, number3, ((number1 + number2) * number3), (number1 * number2 + number2 * number3));
+            Console.Read();
+        }
+    }
+}
+=======================================================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int age;
+            Console.Write("Enter your age ");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("You look younger than  {0}", age);
+            Console.Read();
+        }
+    }
+}
+===================================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+
+            Console.WriteLine("Enter a digit: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            // Part A: "num num num num" using Write
+            Console.Write(num);
+            Console.Write(" ");
+            Console.Write(num);
+            Console.Write(" ");
+            Console.Write(num);
+            Console.Write(" ");
+            Console.Write(num);
+            Console.WriteLine();
+
+            // Part B: "numnumnumnum" using Write
+            Console.Write(num);
+            Console.Write(num);
+            Console.Write(num);
+            Console.WriteLine(num);
+            Console.WriteLine();
+
+            // Part C: "num num num num" using {0}
+            Console.WriteLine("{0} {0} {0} {0}", num);
+
+            // Part D: "numnumnumnum" using {0}
+            Console.WriteLine("{0}{0}{0}{0}", num);
+            Console.Read();
+        }
+    }
+}
+=================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x;
+
+            Console.Write("Enter a number: ");
+            x = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("{0}{0}{0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0}{0}{0}", x);
+            Console.Read();
+        }
+    }
+}
+==============================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the amount of Celsius: ");
+            int celsius = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Kelvin = {0}", celsius + 273);
+            Console.WriteLine("Fahrenheit = {0}", celsius * 18 / 10 + 32);
+            Console.Read();
+        }
+    }
+}
+=======================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\nInput first integer");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nInput second integer");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("check if both are positive");
+            Console.WriteLine((x > 0 && y > 0) || (x > 0 && y > 0));
+
+            Console.ReadLine();
+        }
+    }
+}
+===================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string s = null;
+            
+            if (string.IsNullOrEmpty (s));
+            {
+                Console.WriteLine("string is either null or empty");
+                Console.Read();
+            }
+        }
+    }
+}
+===========================================================================================
+
+=========================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps18
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, num3;
+            Console.WriteLine("Enter three numbers: \n");
+
+            num1 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToInt32(Console.ReadLine());
+            num3 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1 >= num2)
+            {
+                if (num1 >= num3)
+                    Console.WriteLine(num1 + " is the largest number");
+                else
+                    Console.WriteLine(num3 + " is the largest number");
+            }
+
+            else if (num2 >= num3)
+                Console.WriteLine(num2 + " is the largest number");
+
+            else
+                Console.WriteLine(num3 + " is the largest number");
+
+            Console.ReadLine();
+        }
+    }
+}
+================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps20
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string str1 = "moulali";
+            string str2 = "moulali";
+            Console.WriteLine(str1 == str2);
+            Console.Read();
+        }
+    }
+}
+==================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps21
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1 = 50;
+            int num2 = 100;
+            int biggestnum;
+            Console.WriteLine("number 1 : " + num1);
+            Console.WriteLine("number 2 : " + num2);
+            if (num1 > num2)
+            {
+
+                biggestnum = num1;
+
+            }
+            else
+            {
+                biggestnum = num2;
+            }
+
+            Console.WriteLine("biggest number is : " + biggestnum);
+            Console.Read();
+
+        }
+
+
+
+        
+    }
+}
+==================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PS24
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y;
+            for (x = 1; x <= 5; x++)
+            {
+                for (y = 1; y <= x; y++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+                Console.Read();
+               
+                
+            
+            Console.Read();
+        }
+    }
+}
+================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps26
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, r, sum = 0, t;
+
+            Console.Write("\n\n");
+            Console.Write("Display the number in reverse order:\n");
+            Console.Write("--------------------------------------");
+            Console.Write("\n\n");
+
+
+            Console.Write("Input a number: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for (t = num; t != 0; t = t / 10)
+            {
+                r = t % 10;
+                sum = sum * 10 + r;
+            }
+            Console.Write("The number in reverse order is : {0} \n", sum);
+            Console.Read();
+        }
+    }
+}
+=============================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ps27
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int number = 100, sum = 0;
+            do
+            {
+                sum = sum + number;
+                number = number + 1;
+
+            } while (number <= 200);
+            Console.WriteLine("sum of all numbers between 100 and 200");
+            Console.Write(sum);
+            Console.Read();
+        }
+    }
+}
+====================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace p1
+{
+    internal class p2
+    {
+        static void Main(string[] args)
+
+        {
+            Console.Write("Enter a number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter another number: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("{0} + {1} = {2}", num1, num2, num1 + num2);
+            Console.WriteLine("{0} - {1} = {2}", num1, num2, num1 - num2);
+            Console.WriteLine("{0} x {1} = {2}", num1, num2, num1 * num2);
+            Console.WriteLine("{0} / {1} = {2}", num1, num2, num1 / num2);
+            Console.WriteLine("{0} mod {1} = {2}", num1, num2, num1 % num2);
+            Console.Read();
+        }
+    }
+}
+===========================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace p3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int chk_year;
+            Console.Write("\n\n");
+            Console.Write("Check whether a given year is leap year or not:\n");
+            Console.Write("----------------------------------------------");
+            Console.Write("\n\n");
+            Console.Write("Input an year : ");
+            chk_year = Convert.ToInt32(Console.ReadLine());
+
+            if ((chk_year % 400) == 0)
+                Console.WriteLine("{0} is a leap year.\n", chk_year);
+            else if ((chk_year % 100) == 0)
+                Console.WriteLine("{0} is not a leap year.\n", chk_year);
+            else if ((chk_year % 4) == 0)
+                Console.WriteLine("{0} is a leap year.\n", chk_year);
+            else
+                Console.WriteLine("{0} is not a leap year.\n", chk_year);
+            Console.Read();
+        }
+    }
+}
+===================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace p4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i, n, sum = 0;
+            Console.Write("\n\n");
+            Console.Write("Display the sum of n odd natural number:\n");
+            Console.Write("------------------------------------------");
+            Console.Write("\n\n");
+
+            Console.Write("Input number of terms : ");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nThe odd numbers are :");
+            for (i = 1; i <= n; i++)
+            {
+                Console.Write("{0} ", 2 * i - 1);
+                sum += 2 * i - 1;
+            }
+            Console.Write("\nThe Sum of odd Natural Number upto {0} terms : {1} \n", n, sum);
+        }
+    }
+}
+============================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace p5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, num3;
+
+            Console.Write("Input the first number to multiply: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input the second number to multiply: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input the third number to multiply: ");
+            num3 = Convert.ToInt32(Console.ReadLine());
+
+            int result = num1 * num2 * num3;
+            Console.WriteLine("Output: {0} x {1} x {2} = {3}",
+                                num1, num2, num3, result);
+            Console.Read();
+        }
+    }
+}
+==============================================================================================
