@@ -1,0 +1,467 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program1
+{
+    internal class Problem1
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("element -{0} : {1}", i, arr[i]);
+
+            }
+            Console.ReadLine();
+        }
+    }
+}
+===============================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program02
+{
+    internal class Problem2
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the size of the array");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Enter the {0} element of arr", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Array.Reverse(arr);
+            Console.WriteLine("now printing in reverse order");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("the element {0} : {1}", i, arr[i]);
+
+            }
+            Console.ReadLine();
+        }
+    }
+}
+===============================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program03
+{
+    internal class Problem3
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the size of the array");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Enter the {0} element of arr", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Array.Sort(arr);
+            Console.WriteLine("now printing in reverse order");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("the element {0} : {1}", i, arr[i]);
+
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
+===========================================================================================
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program04
+{
+    internal class Problem4
+    {
+        static void Main(string[] args)
+        {
+            ArrayList arrlist = new ArrayList();
+            arrlist.Add(1);
+            arrlist.Add(2);
+            arrlist.Add(3);
+            arrlist.Add(4);
+            arrlist.Add(5);
+            arrlist.Add(1);
+            Console.WriteLine("no of element in Arraylist before removing : " + arrlist.Count);
+            arrlist.Remove(2);
+            arrlist.Remove(4);
+            Console.WriteLine("no of element in Arraylist after removing : " + arrlist.Count);
+            Console.Read();
+
+        }
+    }
+}
+==========================================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program05
+{
+    internal class Problem5
+    {
+        static void Main(string[] args)
+        {
+            int[][] cls = new int[5][];
+            cls[0] = new int[] { 20 };
+            cls[1] = new int[] { 40 };
+            cls[2] = new int[] { 60 };
+            cls[3] = new int[] { 80 };
+            cls[4] = new int[] { 90 };
+            for (int i = 0; i < cls.Length; i++)
+            {
+                Console.WriteLine("Student from class {0}: ", i);
+                for (int j = 0; j < cls[i].Length; j++)
+                {
+                    Console.WriteLine("No of student: {0}", cls[i][j]);
+                }
+                Console.WriteLine();
+                Console.Read();
+
+            }
+
+
+        }
+    }
+}
+====================================================================================================
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program06
+{
+    internal class problem6
+    {
+        static void Main(string[] args)
+        {
+            Stack s = new Stack(2);
+            s.Push(1);
+            s.Push(2);
+            s.Push(3);
+            s.Push("patan");
+            s.Push("moulali");
+            Console.WriteLine("Peek value");
+            object t = s.Peek();
+            Console.WriteLine(t);
+            int cnt = s.Count;
+            Console.WriteLine("Bofore popping the size of stack");
+            Console.WriteLine(cnt);
+            object i = s.Pop();
+            Console.WriteLine("Popped value:");
+            Console.WriteLine(i);
+            int cnt2 = s.Count;
+            Console.WriteLine("After perfome popping the size of stack");
+            Console.WriteLine(cnt2);
+            Console.Read();
+        }
+    }
+}
+==================================================================================================
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program07
+{
+    internal class Problem7
+    {
+        static void Main(string[] args)
+        {
+            Queue s = new Queue(2);
+            s.Enqueue(1);
+            s.Enqueue(2);
+            s.Enqueue(3);
+            s.Enqueue("patan");
+            s.Enqueue("moulali");
+            Console.WriteLine("Peek value");
+            object t = s.Peek();
+            Console.WriteLine(t);
+            int cnt = s.Count;
+            Console.WriteLine("Bofore deqeueing the size of stack");
+            Console.WriteLine(cnt);
+            object i = s.Dequeue();
+            Console.WriteLine("deqeued value:");
+            Console.WriteLine(i);
+            int cnt2 = s.Count;
+            Console.WriteLine("After perfome deqeueing the size of stack");
+            Console.WriteLine(cnt2);
+            Console.Read();
+        }
+    }
+}
+===========================================================================================================
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program08
+{
+    internal class Problem8
+    {
+        static void Main(string[] args)
+        {
+            Hashtable h = new Hashtable();
+            h.Add(1, "Andgrapradesh");
+            h.Add(2, "Mumbai");
+            h.Add(3, "Delhi");
+            h.Add(4, "kolkata");
+            h.Add(5, "Hyderabad");
+            IDictionaryEnumerator ie = h.GetEnumerator();
+            while (ie.MoveNext())
+            {
+                {
+                    Console.WriteLine(ie.Key + "  " + ie.Value);
+                }
+                Console.WriteLine("Using for each");
+                foreach (DictionaryEntry item in h)
+                {
+                    Console.WriteLine(item.Key + "  " + item.Value);
+
+                }
+
+            }
+            Console.ReadLine();
+        }
+    }
+}
+======================================================================================================
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program09
+{
+    internal class Problem9
+    {
+        static void Main(string[] args)
+        {
+            ArrayList al = new ArrayList();
+            al.Add(9.34f);
+
+            al.Add(1.2f);
+            al.Add(1.4f);
+            al.Add(22.48f);
+            al.Add(24.4f);
+            al.Add(43.45f);
+            al.Add(71.21f);
+            foreach (float i in al)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("IN asscending order: ");
+            al.Sort();
+            foreach (float i in al)
+            {
+                Console.WriteLine(i);
+            }
+            al.Reverse();
+            Console.WriteLine("in decending order: ");
+            foreach (float i in al)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+===============================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program10
+{
+    internal class Program
+    {
+        internal class problem10
+        {
+            static void Main(string[] args)
+            {
+                Dictionary<int, string> dic = new Dictionary<int, string>();
+                dic.Add(1, "patan");
+                dic.Add(2, "moulali");
+                dic.Add(3, "patan");
+                dic.Add(4, "apsar");
+
+                foreach (KeyValuePair<int, string> item in dic)
+                {
+                    Console.WriteLine(item.Key + " " + item.Value);
+
+                }
+                Console.ReadKey();
+            }
+        }
+    }
+}
+================================================================================================
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            SortedList s1 = new SortedList();
+            s1.Add(1, 100);
+            s1.Add(2, 1000);
+            s1.Add(3, 100);
+            s1.Add(4, 10000);
+            foreach (DictionaryEntry item in s1)
+            {
+                Console.WriteLine(item.Key + "  " + item.Value);
+                Console.Read();
+            }
+        }
+    }
+}
+================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program12
+{
+    internal class Program
+    {
+        internal class Problem12
+        {
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Enter the size of the array");
+                int n = Convert.ToInt32(Console.ReadLine());
+                int[] arr = new int[n];
+                for (int i = 0; i < n; i++)
+                {
+                    Console.WriteLine("Enter the {0} element of arr", i);
+                    arr[i] = Convert.ToInt32(Console.ReadLine());
+                }
+                Console.WriteLine("The maximum number : " + arr.Max());
+                Console.WriteLine("The maximum number : " + arr.Min());
+                Console.Read();
+            }
+        }
+    }
+}
+==================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = new int[] { 1, 2, 7, 220, 11, 15, 100, 121 };
+            Console.WriteLine("number greater then 100: ");
+            foreach (int i in arr)
+            {
+                if (i > 100)
+                {
+
+                    Console.WriteLine(i);
+                    Console.Read();
+                }
+            }
+        }
+    }
+}
+==========================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace progran14
+{
+    internal class Program
+    {
+
+        static int count(int[] S, int m, int n)
+            {
+                if (n == 0)
+                    return 1;
+
+
+                if (n < 0)
+                    return 0;
+
+                if (m <= 0)
+                    return 0;
+
+
+                return count(S, m - 1, n) +
+                    count(S, m, n - S[m - 1]);
+            }
+            public static void Main()
+            {
+                Console.Write("n = ");
+                int n = Convert.ToInt32(Console.ReadLine());
+                Console.Write("m = ");
+                int m = Convert.ToInt32(Console.ReadLine());
+                Console.Write("arr = ");
+                int[] arr = new int[n];
+                var stringArray = Console.ReadLine().Split(' ');
+                for (var i = 0; i < m; i++)
+                {
+                    arr[i] = int.Parse(stringArray[i]);
+                }
+                Console.WriteLine("Output = {0}", count(arr, m, n));
+            Console.ReadLine();
+            }
+    }
+}
+====================================================================================
